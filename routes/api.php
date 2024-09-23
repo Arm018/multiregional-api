@@ -16,5 +16,5 @@ use App\Http\Controllers\Api\CityController;
 */
 
 
-Route::post('cities', [CityController::class, 'store']);
-Route::delete('cities/{id}', [CityController::class, 'destroy']);
+Route::post('cities/create', [CityController::class, 'store']);
+Route::delete('cities/delete/{id}', [CityController::class, 'destroy']);
